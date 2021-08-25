@@ -1,0 +1,21 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "../node_modules/@types"
+    ]
+  },
+  "exclude": [
+    "assets/*",
+    "../test-bundle.ts",
+    "test.ts",
+    "**/*.spec.ts"
+  ],
+  "files": [
+    "./main.single-spa.ts"
+  ]
+}
